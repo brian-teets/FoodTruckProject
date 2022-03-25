@@ -39,7 +39,8 @@ After choosing a menu item, the user sees the menu again and can choose another 
 
 ## How To Run The Program
 
-
+* HTR (TODO - placeholder for how to run steps)
+* HTR (TODO - placeholder for how to run steps)
 
 ## Technologies / Skills Used 
 
@@ -52,7 +53,7 @@ After choosing a menu item, the user sees the menu again and can choose another 
 
 ## Lessons Learned 
 
-* LL1 (TODO - replace with lesson learned)
-* LL2 (TODO - replace with lesson learned) 
+* LL1 (TODO - placeholder for lesson learned)
+* LL2 (TODO - placeholder for lesson learned) 
 
 
