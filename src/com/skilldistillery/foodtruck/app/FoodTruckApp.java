@@ -34,18 +34,18 @@ public class FoodTruckApp {
 			FoodTruck tempTruck = new FoodTruck( truckName, foodType, rating ); 
 			trucks[i] = tempTruck;
 			
+			
 		} 
-		// TODO User Story 3 - call userMenu
+		// TODO User Story 3 - display user Menu
+		
+		
 		 userMenu(); 
 		 tn.close(); // close the Scanner object
 		 
 	} // end of main method 
 	
-	
-	
-	
 	// TODO User Story 3 - create method to display menu of options to user
-	public static void userMenu() {
+	public static void userMenu(  ) {
 		System.out.println("Enter 1 - 4 to choose from the menu below: ");
 		System.out.println("1 List all existing food trucks ");
 		System.out.println("2 See the average rating of food trucks ");
@@ -60,17 +60,16 @@ public class FoodTruckApp {
 			case "1": 
 			case "list":
 			case "List":
-				System.out.println();; // toString method on FoodTruck class - execute on item 1, but unsure how to call it from here
+				System.out.println( "placeholder - invoke toString method of FoodTruck class" );
 				break;
 			case "2":
 			case "see":
 			case "See":
 			case "average":
-				
+				// calculate average rating from tempTruck array inside of main - how to? 
 				break;
 			
-				
-				
+			
 			}
 
 		
