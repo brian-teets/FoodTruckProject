@@ -48,7 +48,5 @@ public class FoodTruck {
 		this.rating = rating;
 	}
 	
-	
-	
 
 } // end of FoodTruck class
