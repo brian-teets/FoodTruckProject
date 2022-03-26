@@ -47,6 +47,12 @@ public class FoodTruck {
 	public void setRating(int rating) {
 		this.rating = rating;
 	}
+
+	@Override
+	public String toString() {
+		return "FoodTruck [iD=" + iD + ", name=" + name + ", foodType=" + foodType + ", rating=" + rating + "]";
+	}
+	
 	
 
 } // end of FoodTruck class

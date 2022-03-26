@@ -27,16 +27,18 @@ public class FoodTruckApp {
 			}
 			System.out.println("Now, please enter the type of food: ");
 			String foodType = tn.nextLine();
-			System.out.println("Now, please enter your rating: ");
+			System.out.println("Now, please enter your rating from 1 to 5: ");
 			int rating = tn.nextInt();
 			tn.nextLine();
 			
 			FoodTruck tempTruck = new FoodTruck( truckName, foodType, rating ); 
-			trucks[i] = tempTruck; 
+			trucks[i] = tempTruck;
+			
 		} 
 		// TODO User Story 3 - call userMenu
 		 userMenu(); 
-		 tn.close(); // close the Scanner object 
+		 tn.close(); // close the Scanner object
+		 
 	} // end of main method 
 	
 	
@@ -49,6 +51,33 @@ public class FoodTruckApp {
 		System.out.println("2 See the average rating of food trucks ");
 		System.out.println("3 Display the highest-rated food truck ");
 		System.out.println("4 Quit the program ");
+		System.out.println(  );
+		
+		Scanner choice = new Scanner(System.in);
+		String userInput = choice.nextLine();  
+		
+			switch(userInput) { 
+			case "1": 
+			case "list":
+			case "List":
+				System.out.println();; // toString method on FoodTruck class - execute on item 1, but unsure how to call it from here
+				break;
+			case "2":
+			case "see":
+			case "See":
+			case "average":
+				
+				break;
+			
+				
+				
+			}
+
+		
+		choice.close(); 
+
+		// TODO User Story 4 - 
+		
 	} // end of my userMenu method 
 	
 
