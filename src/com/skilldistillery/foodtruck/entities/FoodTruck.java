@@ -50,7 +50,7 @@ public class FoodTruck {
 
 	@Override
 	public String toString() {
-		return "FoodTruck\tiD:" + iD + ", name:" + name + ", foodType:" + foodType + ", rating:" + rating; 
+		return "FoodTruck\tiD:" + iD + ", food truck name:" + name + ", type of food:" + foodType + ", rating:" + rating; 
 	}
 	
 } // end of FoodTruck class
