@@ -58,7 +58,9 @@ public class FoodTruckApp {
 			System.out.println("3 Display the highest-rated food truck ");
 			System.out.println("4 Quit the program ");
 			System.out.println();
-			
+			// displaying the printed menu and then the userInput declaration at the beginning
+			// allows the menu display and the user input to continue looping
+			// until userInput matches conditions to quit 
 			String userInput = choice.nextLine();
 
 			if (userInput.equals("1") || userInput.equalsIgnoreCase("list")) {
@@ -81,7 +83,7 @@ public class FoodTruckApp {
 					totalNumTrucks++;
 
 				}
-				System.out.println(totalRatings / totalNumTrucks);
+				System.out.println( "Average rating is: " + (totalRatings / totalNumTrucks) );
 
 			} else if (userInput.equals("3") || userInput.equalsIgnoreCase("display")
 					|| userInput.equalsIgnoreCase("higest") || userInput.equalsIgnoreCase("highest-rated")) {
@@ -95,14 +97,17 @@ public class FoodTruckApp {
 
 					if (highestRated.getRating() < trucks[i].getRating()) {
 						highestRated = trucks[i];
-					}
+					} // stretch goal - what if multiple items with same highest rating? 
 
 				}
-				System.out.println(highestRated);
+				System.out.println( highestRated );
 
 			} else if (userInput.equals("4") || userInput.equalsIgnoreCase("quit")) {
 				System.out.println("Goodbye");
 				keepGoing = false;
+			}
+			else {
+				System.out.println( "Please choose from the menu." );
 			}
 
 		}
