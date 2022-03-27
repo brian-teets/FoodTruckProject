@@ -46,10 +46,12 @@ public class FoodTruckApp {
 
 	// TODO User Story 3 - method to display menu of options to user
 	public void userMenu(Scanner choice, FoodTruck[] trucks) {
+		// TODO User Story 4 -
+		// User sees menu again - loop / iterate - until choosing to quit 
 
 		boolean keepGoing = true;
 		while (keepGoing) {
-
+			System.out.println(); 
 			System.out.println("Enter 1 - 4 to choose from the menu below: ");
 			System.out.println("1 List all existing food trucks ");
 			System.out.println("2 See the average rating of food trucks ");
@@ -104,9 +106,7 @@ public class FoodTruckApp {
 			}
 
 		}
-
-		// TODO User Story 4 -
-		// User sees menu again - loop / iterate - until choosing to quit
+		
 	} // end of my userMenu method
 
 } // end of class
