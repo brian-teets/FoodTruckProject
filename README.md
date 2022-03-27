@@ -67,7 +67,9 @@ After choosing a menu item, the user sees the menu again and can choose another 
 
 ## Lessons Learned 
 
-* LL1 (TODO - placeholder for lesson learned)
-* LL2 (TODO - placeholder for lesson learned) 
+* Instantiating an object instance of my FoodTruckApp inside of my FoodTruckApp main
+* Passing in already instantiated scanner object and trucks array object to use in userMenu method
+* Remember to be careful about placement of userInput variable  - placing inside the method, but outside the while loop caused an infinite loop
+* Advanced For Loops section containing MinMax drill helped with writing logic for rating expressions 
 
 
