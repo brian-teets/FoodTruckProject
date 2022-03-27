@@ -13,7 +13,7 @@ public class FoodTruckApp {
 		// and rating for up to 5 food trucks. The food truck id is not input by the user
 		// but instead assigned automatically from the Food Truck constructor (Food Truck class). 
 		// Truck id is incremented when a new truck object is created. 
-				Scanner tn = new Scanner(System.in); // scanner object to collect and store food truck name user entered 
+		Scanner tn = new Scanner(System.in); // scanner object to collect and store food truck name user entered 
 		
 		
 		FoodTruck[] trucks = new FoodTruck[ 5 ]; // trucks is an array of 5 food truck objects 
@@ -37,8 +37,6 @@ public class FoodTruckApp {
 			
 		} 
 		// TODO User Story 3 - display user Menu
-		
-		
 		 userMenu(); 
 		 tn.close(); // close the Scanner object
 		 
@@ -54,24 +52,28 @@ public class FoodTruckApp {
 		System.out.println(  );
 		
 		Scanner choice = new Scanner(System.in);
-		String userInput = choice.nextLine();  
-		
-			switch(userInput) { 
-			case "1": 
-			case "list":
-			case "List":
-				System.out.println( "placeholder - invoke toString method of FoodTruck class" );
-				break;
-			case "2":
-			case "see":
-			case "See":
-			case "average":
-				// calculate average rating from tempTruck array inside of main - how to? 
-				break;
+		String userInput = choice.nextLine(); 
 			
-			
+			boolean keepGoing = true;
+			while(keepGoing) {
+				
+				if( userInput == "1" || userInput.equalsIgnoreCase("list") )  {
+					System.out.println( "placeholder - invoke toString method of FoodTruck class" );
+				}
+				else if( userInput == "2" || userInput.equalsIgnoreCase("see") || userInput.equalsIgnoreCase("average")) {
+					// Sysout calculated average rating from tempTruck array inside of main - how to? 
+					
+				}
+				else if( userInput == "3" || userInput.equalsIgnoreCase("display") || userInput.equalsIgnoreCase("higest")
+						|| userInput.equalsIgnoreCase("highest-rated") ) {
+					// Sysout highest rated value from tempTruck array inside of main - how to? 
+				}
+				else if( userInput == "4" || userInput.equalsIgnoreCase("quit")) {
+					System.out.println("Goodbye");
+					keepGoing = false; 
+				}
+				
 			}
-
 		
 		choice.close(); 
 

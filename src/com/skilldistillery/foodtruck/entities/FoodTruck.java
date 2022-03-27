@@ -53,6 +53,4 @@ public class FoodTruck {
 		return "FoodTruck [iD=" + iD + ", name=" + name + ", foodType=" + foodType + ", rating=" + rating + "]";
 	}
 	
-	
-
 } // end of FoodTruck class
