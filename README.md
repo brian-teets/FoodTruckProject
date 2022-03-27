@@ -44,12 +44,12 @@ After choosing a menu item, the user sees the menu again and can choose another 
 * Run the program
 
 	* User / tester will enter data for up to 5 food trucks. 
-	* When prompted, tester / reviewer will begin by entering the name of any food truck. Hit return.
-	* Next, when prompted, tester / reviewer will enter the type of food sold by the food truck user / reviewer entered in previous step. Hit return.
-	* Next, when prompted, tester / reviewer will enter their rating for the food truck. Valid input is a numeric value between 1 and 5. Hit return.
+	* When prompted, tester / reviewer will begin by entering the `name` of any food truck. Hit return.
+	* Next, when prompted, tester / reviewer will enter the `type of food` sold by the food truck user / reviewer entered in previous step. Hit return.
+	* Next, when prompted, tester / reviewer will enter their `rating` for the food truck. Valid input is a `numeric value` between `1` and `5`. Hit return.
 	* The program will loop and repeat the prompts. Tester / reviewer may enter a maximum of 5 food truck review sets.  
 		* When prompted to enter the name of a food truck, the user may either choose to continue entering new food truck reviews,  
-		* OR, may type the word 'quit'.
+		* OR, may type the word `quit`.
 	* IF user chooses to quit entering new food truck names, OR reaches the maximum of 5 food truck reviews entered, then program will display menu of available options. 
 		* User must either enter the menu number of `1 - 4`, OR user may enter the first word of the corresponding menu item. 
 		* The menu prompt will continue to be displayed if the user chooses any menu item `1 - 3`. 
